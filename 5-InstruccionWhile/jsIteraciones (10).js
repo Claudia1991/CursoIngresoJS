@@ -12,16 +12,16 @@ function mostrar() {
    * 9-Diferencia entre positivos y negativos, (positvos-negativos).
    */
   //declarar contadores y variables
-  var sumaNumerosNegativos;
-  var sumaNumerosPositivos;
-  var cantidadNumeroNegativos;
-  var cantidadNumerosPositivos;
-  var cantidadCeros;
-  var cantidadNumerosPares;
-  var promedioNumerosPositivos;
-  var promedioNumerosNegativos;
-  var diferenciaPositivosNegativos;
-  var numeroIngresado;
+  var sumaNumerosNegativos=0;
+  var sumaNumerosPositivos=0;
+  var cantidadNumeroNegativos=0;
+  var cantidadNumerosPositivos=0;
+  var cantidadCeros=0;
+  var cantidadNumerosPares=0;
+  var promedioNumerosPositivos=0;
+  var promedioNumerosNegativos=0;
+  var diferenciaPositivosNegativos=0;
+  var numeroIngresado=0;
   // var contador=0;
   var respuesta = "si";
   while (respuesta != "no") {
@@ -68,21 +68,21 @@ function mostrar() {
   document.write(
     "1-Suma de los negativos:" +
       sumaNumerosNegativos +
-      " \n 2-Suma de los positivos:" +
+      " \t 2-Suma de los positivos:" +
       sumaNumerosPositivos +
-      " \n 3-Cantidad de positivos: " +
+      " \t 3-Cantidad de positivos: " +
       cantidadNumerosPositivos +
-      "\n 4-Cantidad de negativos:" +
+      "\t 4-Cantidad de negativos:" +
       cantidadNumeroNegativos +
-      " \n 5-Cantidad de ceros:" +
+      " \t 5-Cantidad de ceros:" +
       cantidadCeros +
-      " \n 6-Cantidad de números pares:" +
+      " \t 6-Cantidad de números pares:" +
       cantidadNumerosPares +
-      " \n 7-Promedio de positivos: " +
+      " \t 7-Promedio de positivos: " +
       promedioNumerosPositivos +
-      "\n 8-Promedios de negativos: " +
+      "\t 8-Promedios de negativos: " +
       promedioNumerosNegativos +
-      "\n 9-Diferencia entre positivos y negativos, (positvos-negativos): " +
+      "\t 9-Diferencia entre positivos y negativos, (positvos-negativos): " +
       diferenciaPositivosNegativos
   );
 }
