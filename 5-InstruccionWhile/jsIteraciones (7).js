@@ -7,13 +7,10 @@ function mostrar() {
   var respuesta = "si";
   var numero = prompt("Ingrese un numero(para terminar ingrese si): ");
   while (numero != respuesta) {
-    document.getElementById("suma").value = acumulador;
-	document.getElementById("promedio").value = acumulador / 5;
-	
-	contador++;
-	acumulador += parseInt(numero);
-	
+    contador++;
+    acumulador += parseInt(numero);
     numero = prompt("Ingrese un numero(para terminar ingrese si): ");
-
   }
+  document.getElementById("suma").value = acumulador;
+  document.getElementById("promedio").value = acumulador / contador;
 }

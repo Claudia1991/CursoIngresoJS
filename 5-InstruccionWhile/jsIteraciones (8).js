@@ -8,14 +8,14 @@ function mostrar() {
   var numero = prompt("Ingrese un numero(para terminar ingrese si): ");
 
   while (numero != respuesta) {
-	contador++;
-	numero = parseInt(numero);
-	if(numero > 0){
-		positivo += numero;
-	}else{
-		negativo += numero
-	}
-	numero = prompt("Ingrese un numero(para terminar ingrese si): ");
+    contador++;
+    numero = parseInt(numero);
+    if (numero > 0) {
+      positivo += numero;
+    } else {
+      negativo += numero;
+    }
+    numero = prompt("Ingrese un numero(para terminar ingrese si): ");
   }
 
   document.getElementById("suma").value = positivo;
