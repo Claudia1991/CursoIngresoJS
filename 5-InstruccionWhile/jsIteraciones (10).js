@@ -24,12 +24,12 @@ function mostrar() {
   var numeroIngresado=0;
   // var contador=0;
   var respuesta = "si";
+  respuesta = prompt(
+    "Ingrese un numero(para terminar la carga, ingrese 'no'): "
+  );
   while (respuesta != "no") {
-    respuesta = prompt(
-      "Ingrese un numero(para terminar la carga, ingrese 'no'): "
-    );
     //Valido el ingreso del usuario.
-    if (isNaN(respuesta) && !validarRespuestaUsuario(respuesta)) {
+    if (!validarRespuestaUsuario(respuesta)) {
       respuesta = prompt(
         "Ingrese un numero(para terminar la carga, ingrese 'no'): "
       );
@@ -51,6 +51,12 @@ function mostrar() {
       }
       //Analizo si es par
       if (numeroIngresado % 2 === 0) {
+        /**
+         * 2%2 === 0 => true
+         * 0%2 === 0 => true
+         * -2%2 === 0 => true
+         * Preguntar
+         */
         cantidadNumerosPares++;
       }
     }
@@ -68,21 +74,21 @@ function mostrar() {
   document.write(
     "1-Suma de los negativos:" +
       sumaNumerosNegativos +
-      " \t 2-Suma de los positivos:" +
+      " <br> 2-Suma de los positivos:" +
       sumaNumerosPositivos +
-      " \t 3-Cantidad de positivos: " +
+      " <br> 3-Cantidad de positivos: " +
       cantidadNumerosPositivos +
-      "\t 4-Cantidad de negativos:" +
+      "<br> 4-Cantidad de negativos:" +
       cantidadNumeroNegativos +
-      " \t 5-Cantidad de ceros:" +
+      " <br> 5-Cantidad de ceros:" +
       cantidadCeros +
-      " \t 6-Cantidad de números pares:" +
+      " <br> 6-Cantidad de números pares:" +
       cantidadNumerosPares +
-      " \t 7-Promedio de positivos: " +
+      " <br> 7-Promedio de positivos: " +
       promedioNumerosPositivos +
-      "\t 8-Promedios de negativos: " +
+      "<br> 8-Promedios de negativos: " +
       promedioNumerosNegativos +
-      "\t 9-Diferencia entre positivos y negativos, (positvos-negativos): " +
+      "<br> 9-Diferencia entre positivos y negativos, (positvos-negativos): " +
       diferenciaPositivosNegativos
   );
 }
