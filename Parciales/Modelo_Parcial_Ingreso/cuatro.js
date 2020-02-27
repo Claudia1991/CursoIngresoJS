@@ -38,8 +38,19 @@ function IsValidChar(char){
 }
 
 function IsVowel(char){
-    return /^[a-e-i-o-u-A-E-I-O-U]+$/.test(char);
+    return /^[aeyiuo]+$/.test(char);
 }
+
+function IsConsonat(char){
+    return /^[^aeyiuo]+$/.test(char);
+}
+
 function IsValidNumber(number){
     return !isNaN(number) && parseInt(number)>=-10 && parseInt(number) <=10;  
 }
+
+/**
+ * ^[aeyiuo]+$ for only vowels
+
+^[^aeyiuo]+$ for only consonants.
+ */
